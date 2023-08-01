@@ -7,8 +7,11 @@ class Book():
     def __repr__(self):
         return f"Title: {self.title},author:{self.author}"
 
+    def __len__(self):
+        return self.pages
 mybook=Book("rose", 'jose',250)
 
-print(mybook)
+length_len=len(mybook)
+print(length_len)
 
         
